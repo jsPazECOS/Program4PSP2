@@ -2,7 +2,7 @@
  * Programa: Programa 4 - PSP 2
  *
  * @author Juan Sebastian Paz Prieto
- * @date 20/03/2017 Clase: Program Descripción: Clase que lee los archivos de
+ * @date 20/03/2017 Clase: Program Descripcion: Clase que lee los archivos de
  * datos de un path, para calcular los log ranges de cada uno.
  *
  */
@@ -23,7 +23,7 @@ public class Program {
     private LinkedList<Data> data;
 
     /**
-     * Método que permite acceder al valor de data
+     * Metodo que permite acceder al valor de data
      *
      * @return un valor <code>LinkedList</code> de los datos.
      */
@@ -32,7 +32,7 @@ public class Program {
     }
 
     /**
-     * Método que lee los archivos localizados en path para instanciar objetos
+     * Metodo que lee los archivos localizados en path para instanciar objetos
      * de tipo Data
      *
      * @param path
@@ -54,7 +54,7 @@ public class Program {
     }
 
     /**
-     * Método que permite obtener el contenido de un archivo
+     * Metodo que permite obtener el contenido de un archivo
      *
      * @param path
      */
@@ -73,7 +73,7 @@ public class Program {
     }
 
     /**
-     * Método que muestra los resultados de cada calculo
+     * Metodo que muestra los resultados de cada calculo
      */
     public void showResults() {
         get("/hello", (req, res) -> "Hello World");

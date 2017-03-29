@@ -2,7 +2,7 @@
  * Programa: Programa 4 - PSP 2
  *
  * @author Juan Sebastian Paz Prieto
- * @date 20/03/2017 Clase: Data Descripción: Clase que representa cada grupo de
+ * @date 20/03/2017 Clase: Data Descripcion: Clase que representa cada grupo de
  * datos, a los cuales se les calcula su logarithmic ranges.
  *
  */
@@ -26,7 +26,7 @@ public class Data {
     private LogRanges ranges;
 
     /**
-     * Método constructor de la clase Data.
+     * Metodo constructor de la clase Data.
      *
      * @param name nombre del archivo
      * @param content contenido del archivo
@@ -38,7 +38,7 @@ public class Data {
     }
 
     /**
-     * Método que permite acceder al nombre de los datos
+     * Metodo que permite acceder al nombre de los datos
      *
      * @return un valor <code>String</code> que representa el nombre de los
      * datos
@@ -48,7 +48,7 @@ public class Data {
     }
 
     /**
-     * Método que permite acceder a los rangos de logaritmos
+     * Metodo que permite acceder a los rangos de logaritmos
      *
      * @return un valor <code>String</code> que representa el nombre de los
      * datos
@@ -58,7 +58,7 @@ public class Data {
     }
 
     /**
-     * Método que toma el contenido del archivo para instanciar las partes.
+     * Metodo que toma el contenido del archivo para instanciar las partes.
      */
     public void createParts() {
         try {
@@ -82,7 +82,7 @@ public class Data {
     }
 
     /**
-     * Método que calcula el average de los valores de Ln
+     * Metodo que calcula el average de los valores de Ln
      */
     private void calculateAvg() {
         double sumatory = 0.0;
@@ -97,7 +97,7 @@ public class Data {
     }
 
     /**
-     * Método que calcula la varianza de los datos.
+     * Metodo que calcula la varianza de los datos.
      */
     private void calculateVariance() {
 
@@ -114,14 +114,14 @@ public class Data {
     }
 
     /**
-     * Método que calcula la desviación estandar de los datos.
+     * Metodo que calcula la desviacion estandar de los datos.
      */
     private void calculateStdDeviation() {
         this.stdDeviation = Math.sqrt(this.variance);
     }
 
     /**
-     * Método que calcula los rangos logaritmicos de los datos
+     * Metodo que calcula los rangos logaritmicos de los datos
      */
     private void calculateLogRanges() {
         double vs = this.avg - (2 * this.stdDeviation);
@@ -139,7 +139,7 @@ public class Data {
     }
 
     /**
-     * Método que calcula el logaritmo natural, y el exponencial de un valor.
+     * Metodo que calcula el logaritmo natural, y el exponencial de un valor.
      */
     private double calculateLogRange(double range) {
         double result;
@@ -149,7 +149,7 @@ public class Data {
     }
 
     /**
-     * Método que realiza el calculo de todos los datos.
+     * Metodo que realiza el calculo de todos los datos.
      */
     public void calculateResult() {
         this.calculateAvg();

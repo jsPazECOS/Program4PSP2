@@ -2,8 +2,8 @@
  * Programa: Programa 4 - PSP 2
  *
  * @author Juan Sebastian Paz Prieto
- * @date 20/03/2017 Clase: LogRanges Descripción: Clase que almacena los
- * valores de los rangos de tamaño relativos de una serie de datos.
+ * @date 20/03/2017 Clase: LogRanges Descripcion: Clase que almacena los
+ * valores de los rangos de tamaÃ±o relativos de una serie de datos.
  *
  */
 package edu.uniandes.ecos.CAIS.P4PSP2.model;
@@ -17,7 +17,7 @@ public class LogRanges {
     private double vl;
 
     /**
-     * Método constructor de la clase LogRanges
+     * Metodo constructor de la clase LogRanges
      *
      * @param vs
      * @param s
@@ -34,7 +34,7 @@ public class LogRanges {
     }
 
     /**
-     * Método que permite acceder al valor de vs (Very Small).
+     * Metodo que permite acceder al valor de vs (Very Small).
      *
      * @return un valor <code>Double</code> del valor de vs.
      */
@@ -43,7 +43,7 @@ public class LogRanges {
     }
 
     /**
-     * Método que permite acceder al valor de s (Small).
+     * Metodo que permite acceder al valor de s (Small).
      *
      * @return un valor <code>Double</code> del valor de s.
      */
@@ -52,7 +52,7 @@ public class LogRanges {
     }
 
     /**
-     * Método que permite acceder al valor de m (Medium).
+     * Metodo que permite acceder al valor de m (Medium).
      *
      * @return un valor <code>Double</code> del valor de m.
      */
@@ -61,7 +61,7 @@ public class LogRanges {
     }
 
     /**
-     * Método que permite acceder al valor de l (Large).
+     * Metodo que permite acceder al valor de l (Large).
      *
      * @return un valor <code>Double</code> del valor de l.
      */
@@ -70,7 +70,7 @@ public class LogRanges {
     }
 
     /**
-     * Método que permite acceder al valor de vl (Very Large).
+     * Metodo que permite acceder al valor de vl (Very Large).
      *
      * @return un valor <code>Double</code> del valor de vl.
      */

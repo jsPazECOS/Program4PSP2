@@ -2,7 +2,7 @@
  * Programa: Programa 4 - PSP 2
  *
  * @author Juan Sebastian Paz Prieto
- * @date 20/03/2017 Clase: LogRanges Descripción: Clase que almacena los
+ * @date 20/03/2017 Clase: LogRanges Descripcion: Clase que almacena los
  * valores de una parte, segun los datos.
  *
  */
@@ -21,7 +21,7 @@ public class Part {
     private double ln;
 
     /**
-     * Método constructor de la clase Part
+     * Metodo constructor de la clase Part
      *
      * @param name
      * @param size
@@ -34,7 +34,7 @@ public class Part {
     }
 
     /**
-     * Método que permite acceder al valor de relation
+     * Metodo que permite acceder al valor de relation
      *
      * @return un valor <code>Double</code> del valor de relation.
      */
@@ -43,7 +43,7 @@ public class Part {
     }
 
     /**
-     * Método que permite acceder al valor de ln (Logaritmo Natural)
+     * Metodo que permite acceder al valor de ln (Logaritmo Natural)
      *
      * @return un valor <code>Double</code> del valor de ln.
      */
@@ -52,15 +52,15 @@ public class Part {
     }
 
     /**
-     * Método que permite calcular la relación entre el tamaño de la parte, y el
-     * número de items;
+     * Metodo que permite calcular la relacion entre el tamano de la parte, y el
+     * numero de items
      */
     public void calculateRelation() {
         this.relation = this.size / this.numberItems;
     }
 
     /**
-     * Método que permite calcular el logaritmo natural de la relación.
+     * Metodo que permite calcular el logaritmo natural de la relacion.
      */
     public void calculateLn() {
         this.ln = Math.log(this.relation);

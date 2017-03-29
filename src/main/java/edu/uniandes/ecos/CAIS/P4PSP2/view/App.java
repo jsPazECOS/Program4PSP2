@@ -16,6 +16,6 @@ public class App {
         programa4.readFiles(path);
         programa4.showResults();
         
-        get("/", (req, res) -> "Hello World");
+     //   get("/", (req, res) -> "Hello World");
     }
 }

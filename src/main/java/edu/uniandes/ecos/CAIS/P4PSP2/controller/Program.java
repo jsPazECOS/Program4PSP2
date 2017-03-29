@@ -16,7 +16,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.LinkedList;
-import static spark.Spark.*;
+
 
 public class Program {
 
@@ -76,7 +76,7 @@ public class Program {
      * Metodo que muestra los resultados de cada calculo
      */
     public void showResults() {
-        get("/hello", (req, res) -> "Hello World");
+        
         Iterator it = this.data.iterator();
 
         while (it.hasNext()) {

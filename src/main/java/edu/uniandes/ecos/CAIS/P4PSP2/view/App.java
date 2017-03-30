@@ -18,7 +18,7 @@ public class App {
         
         //staticFileLocation("/public");
         
-        port(Integer.valueOf(System.getenv("PORT")));
+       // port(Integer.valueOf(System.getenv("PORT")));
         get("/", (req, res) -> "Hello World");
     }
 }

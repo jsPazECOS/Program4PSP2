@@ -97,7 +97,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>edu.uniandes.ecos.psp2.controlador.Principal</mainClass>
+                            <mainClass>edu.uniandes.ecos.CAIS.P4PSP2.view.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

@@ -16,7 +16,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.LinkedList;
-
+import static spark.Spark.get;
+import static spark.SparkBase.port;
+import static spark.SparkBase.staticFileLocation;
 
 public class Program {
 
@@ -76,17 +78,31 @@ public class Program {
      * Metodo que muestra los resultados de cada calculo
      */
     public void showResults() {
-        
-        Iterator it = this.data.iterator();
 
-        while (it.hasNext()) {
-            Data info = (Data) it.next();
-            System.out.println("Name: " + info.getName());
-            System.out.println("VS: " + info.getRanges().getVs());
-            System.out.println("S: " + info.getRanges().getS());
-            System.out.println("M: " + info.getRanges().getM());
-            System.out.println("L: " + info.getRanges().getL());
-            System.out.println("VL: " + info.getRanges().getVl());
-        }
+        Iterator it = this.data.iterator();
+        staticFileLocation("/public");
+
+        port(Integer.valueOf(System.getenv("PORT")));
+        get("/", (req, res) -> {
+            String response = "";
+            while (it.hasNext()) {
+                Data info = (Data) it.next();
+
+                response += "\tName: " + info.getName();
+                response += "\tVS: " + info.getRanges().getVs();
+                response += "\tS: " + info.getRanges().getS();
+                response += "\tM: " + info.getRanges().getM();
+                response += "\tL: " + info.getRanges().getL();
+                response += "\tVL: " + info.getRanges().getVl();
+                System.out.println("Name: " + info.getName());
+                System.out.println("VS: " + info.getRanges().getVs());
+                System.out.println("S: " + info.getRanges().getS());
+                System.out.println("M: " + info.getRanges().getM());
+                System.out.println("L: " + info.getRanges().getL());
+                System.out.println("VL: " + info.getRanges().getVl());
+            }
+            return response;
+        });
+
     }
 }

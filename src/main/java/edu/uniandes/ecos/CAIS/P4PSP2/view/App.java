@@ -16,7 +16,7 @@ public class App {
         programa4.readFiles(path);
         programa4.showResults();
         
-        staticFileLocation("/public");
+        //staticFileLocation("/public");
         
         port(Integer.valueOf(System.getenv("PORT")));
         get("/", (req, res) -> "Hello World");

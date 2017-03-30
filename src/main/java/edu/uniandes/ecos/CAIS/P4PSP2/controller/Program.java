@@ -88,12 +88,12 @@ public class Program {
             while (it.hasNext()) {
                 Data info = (Data) it.next();
 
-                response += "\tName: " + info.getName();
-                response += "\tVS: " + info.getRanges().getVs();
-                response += "\tS: " + info.getRanges().getS();
-                response += "\tM: " + info.getRanges().getM();
-                response += "\tL: " + info.getRanges().getL();
-                response += "\tVL: " + info.getRanges().getVl();
+                response += "<br>Name: " + info.getName();
+                response += "<br>VS: " + info.getRanges().getVs();
+                response += "<br>S: " + info.getRanges().getS();
+                response += "<br>M: " + info.getRanges().getM();
+                response += "<br>L: " + info.getRanges().getL();
+                response += "<br>VL: " + info.getRanges().getVl();
                 System.out.println("Name: " + info.getName());
                 System.out.println("VS: " + info.getRanges().getVs());
                 System.out.println("S: " + info.getRanges().getS());
